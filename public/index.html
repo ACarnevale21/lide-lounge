@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,9 +18,10 @@
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
-        <a href="https://flowbite.com/" class="flex items-center">
-          <img src="./assets/Logo Blanco.png" class="h-8 mx-2" alt="" />
+        <a href="index.html" class="flex items-center">
+          <img src="../assets/Logo Blanco.png" class="h-8 mx-2" alt="" />
         </a>
+        <a href="#contacto">
         <div class="flex md:order-2">
           <button
             type="button"
@@ -28,6 +29,7 @@
           >
             Contacto
           </button>
+        </a>
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
@@ -144,7 +146,7 @@
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="./assets/_A746207.jpg"
+            src="../assets/_A746207.jpg"
             class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />
@@ -155,7 +157,7 @@
           data-carousel-item="active"
         >
           <img
-            src="assets/_A746219.jpg"
+            src="../assets/_A746219.jpg"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />
@@ -163,7 +165,7 @@
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="assets/_A746232.jpg"
+            src="../assets/_A746232.jpg"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />
@@ -478,81 +480,174 @@
         </div>
       </div>
     </div>
-    <div class="font-medium text-4xl ml-4 mb-12">
-      <b>Conozca</b> nuestros ambientes
+    <div class="casa-lide_ambientes">
+      <div class="font-medium text-3xl ml-4 mb-12">
+        <b>Conozca</b> nuestros ambientes
+      </div>
+      <div class="grid grid-cols-1 gap-2 lg:w-[1200px] mx-auto">
+        <div class="relative">
+          <img
+            class="h-auto max-w-full rounded-lg object-cover"
+            src="../assets/_A746207.jpg"
+            alt=""
+          />
+          <div
+            class="mx-auto w-56 my-6 md:absolute md:bottom-0 md:right-0 md:bg-black/90 md:h-56 md:w-[300px] md:p-6"
+          >
+            <div class="text-center text-lg md:text-white">
+              Salón de <b>conferencias</b> en formato consejo para hasta 40
+              personas.
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg object-cover"
+            src="../assets/_A746209.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mx-auto my-6">
+          <a href="#contacto">
+          <button
+            class="bg-black text-white p-4 text-center text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            Realice su reserva
+          </button>
+        </a>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="../assets/_A746216.jpg"
+            alt=""
+          />
+          <div
+            class="mx-auto w-56 my-6 md:absolute md:bottom-0 md:right-0 md:bg-black/90 md:h-56 md:w-[300px] md:p-6"
+          >
+            <div class="text-center md:text-white">
+              Salão de em módulo <b>conferências</b> conselho para até 40
+              pessoas.
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="../assets/_A746232.jpg"
+            alt=""
+          />
+          <div
+            class="mx-auto w-56 my-6 md:absolute md:bottom-0 md:right-0 md:bg-black/90 md:h-56 md:w-[300px] md:p-6"
+          >
+            <div class="text-center text-lg md:text-white">
+              Salón de <b>conferencias</b> en formato consejo para hasta 40
+              personas.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="grid grid-cols-1 gap-2 lg:w-[1200px] mx-auto">
-      <div class="relative">
-        <img
-          class="h-auto max-w-full rounded-lg object-cover"
-          src="./assets/_A746207.jpg"
-          alt=""
-        />
+    <div id="contacto" class="casa-lide_contacto mt-12">
+      <div class="font-medium text-3xl ml-4 mb-12">
+        <b>Reservas</b> e Informacion
       </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg object-cover"
-          src="./assets/_A746209.jpg"
-          alt=""
-        />
-      </div>
-      <div class="mx-auto my-6">
-        <button
-          class="bg-black text-white p-4 text-center text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-        >
-          Realice su reserva
-        </button>
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="assets/_A746216.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="assets/_A746232.jpg"
-          alt=""
-        />
+      <div
+        class="casa-lide_contacto_data lg:grid lg:grid-cols-2 lg:p-6 lg:w-[1200px] lg:mx-auto"
+      >
+        <div class="casa-lide_contacto_avatar">
+          <div
+            class="casa-lide_contacto_foto_avatar mx-auto flex items-center justify-center mb-2"
+          >
+            <img
+              class="rounded-full w-36 h-36"
+              src="https://dummyimage.com/400x400/000/fff.png"
+              alt="Extra large avatar"
+            />
+          </div>
+          <div class="casa-lide_contacto_informacion_avatar">
+            <h1 class="text-2xl font-semibold text-gray-800 text-center">
+              Nombre Apellido
+            </h1>
+            <h3 class="text-lg font-semibold text-gray-800 text-center">
+              cargo en lide
+            </h3>
+            <p class="text-md text-blue-700 text-center font-medium">
+              +54 9 3413086007
+            </p>
+            <p class="text-md text-blue-700 text-center font-medium">
+              ejemplo@email.com
+            </p>
+          </div>
+        </div>
+        <div class="casa-lide_contacto_formulario">
+          <form
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+            action="/enviar-consulta"
+            method="POST"
+          >
+            <div class="mb-4">
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="nombre"
+                type="text"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-4 flex flex-row gap-2">
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="telefono"
+                type="tel"
+                placeholder="Teléfono"
+              />
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="cantidad_personas"
+                type="number"
+                placeholder="Cantidad de Personas"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="empresa"
+                type="text"
+                placeholder="Empresa"
+              />
+            </div>
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-
     <footer class="text-gray-600 body-font">
       <div
         class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
       >
-        <a
-          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            ></path>
-          </svg>
-          <span class="ml-3 text-xl">Tailblocks</span>
-        </a>
+      <a href="index.html" class="flex items-center">
+        <img src="../assets/Logo Blanco.png" class="h-8 mx-2" alt="" />
+      </a>
         <p
           class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
         >
-          © 2020 Tailblocks —
-          <a
-            href="https://twitter.com/knyttneve"
-            class="text-gray-600 ml-1"
-            rel="noopener noreferrer"
-            target="_blank"
-            >@knyttneve</a
-          >
+          © 2023 Lide Lounge
+        
         </p>
         <span
           class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
