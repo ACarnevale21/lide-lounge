@@ -19,7 +19,8 @@
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
         <a href="index.html" class="flex items-center">
-          <img src="/assets/Logo Blanco.png" class="h-8 mx-2" alt="" />
+          
+          <img src="/assets/lide_lounge_logo.svg" class="h-12" alt="" />
         </a>
         <a href="#contacto">
         <div class="flex md:order-2">
@@ -481,7 +482,7 @@
       </div>
     </div>
     <div class="casa-lide_ambientes">
-      <div class="font-medium text-3xl ml-4 mb-12">
+      <div class="font-medium text-3xl ml-4 mb-12 md:ml-8">
         <b>Conozca</b> nuestros ambientes
       </div>
       <div class="grid grid-cols-1 gap-2 lg:w-[1200px] mx-auto">
@@ -492,20 +493,26 @@
             alt=""
           />
           <div
-            class="mx-auto w-56 my-6 md:absolute md:bottom-0 md:right-0 md:bg-black/90 md:h-56 md:w-[300px] md:p-6 md:m-0"
+            class="mx-auto w-[350px] my-6 md:absolute md:bottom-0 md:right-0 lg:-right-16 md:bg-gray-50 md:h-36 md:w-[350px] md:p-2 md:m-0 md:py-2"
           >
-            <div class="text-center text-lg md:text-white">
-              Salón de <b>conferencias</b> en formato consejo para hasta 40
-              personas.
+            <div class="text-center text-xl md:text-2xl">
+              Espacio <b>profesional</b> con tecnología de punta para eventos empresariales y conferencias inspiradoras.
             </div>
           </div>
         </div>
-        <div>
+        <div class="relative">
           <img
             class="h-auto max-w-full rounded-lg object-cover"
             src="/assets/_A746209.jpg"
             alt=""
           />
+          <div
+            class="mx-auto w-[350px] my-6 md:absolute md:bottom-0 md:left-0 lg:-left-16 md:bg-white md:h-36 md:w-[350px] md:p-2 md:m-0 md:py-2"
+          >
+            <div class="text-center text-xl md:text-2xl">
+              Espacio <b>ejecutivo</b> con capacidad para conferencias y reuniones estratégicas con líderes empresariales.
+            </div>
+          </div>
         </div>
         <div class="mx-auto my-6">
           <a href="#contacto">
@@ -523,11 +530,10 @@
             alt=""
           />
           <div
-            class="mx-auto w-56 my-6 md:absolute md:bottom-0 md:right-0 md:bg-black/90 md:h-56 md:w-[300px] md:p-6 md:m-0"
+            class="mx-auto w-[350px] my-6 md:absolute md:bottom-0 md:left-0 lg:-left-16 md:bg-white md:h-36  md:p-4 md:m-0 md:py-2"
           >
-            <div class="text-center md:text-white">
-              Salão de em módulo <b>conferências</b> conselho para até 40
-              pessoas.
+            <div class="text-center text-xl md:text-2xl">
+              Ambiente <b>moderno y versátil</b> para encuentros de negocios y presentaciones multimedia.
             </div>
           </div>
         </div>
@@ -538,18 +544,17 @@
             alt=""
           />
           <div
-            class="mx-auto w-56 my-6 md:absolute md:bottom-0 md:right-0 md:bg-black/90 md:h-56 md:w-[300px] md:p-6 md:m-0"
+            class="mx-auto w-[350px] my-6 md:absolute md:bottom-0 md:right-0 lg:-right-16 md:bg-white md:h-36 md:p-4 md:m-0"
           >
-            <div class="text-center text-lg md:text-white">
-              Salón de <b>conferencias</b> en formato consejo para hasta 40
-              personas.
+            <div class="text-center text-xl md:text-2xl">
+              Salón de <b>reuniones</b> de alto nivel con equipamiento audiovisual de última generación.
             </div>
           </div>
         </div>
       </div>
     </div>
     <div id="contacto" class="casa-lide_contacto mt-12">
-      <div class="font-medium text-3xl ml-4 mb-12">
+      <div class="font-medium text-3xl ml-4 mb-12 md:ml-8">
         <b>Reservas</b> e Informacion
       </div>
       <div
@@ -591,6 +596,7 @@
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="nombre"
                 type="text"
+                name="nombre"
                 placeholder="Nombre"
               />
             </div>
@@ -599,6 +605,7 @@
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="email"
                 type="email"
+                name="email"
                 placeholder="Email"
               />
             </div>
@@ -607,12 +614,14 @@
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="telefono"
                 type="tel"
+                name="telefono"
                 placeholder="Teléfono"
               />
               <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="cantidad_personas"
+                id="cantpersonas"
                 type="number"
+                name="cantpersonas"
                 placeholder="Cantidad de Personas"
               />
             </div>
@@ -621,16 +630,16 @@
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="empresa"
                 type="text"
+                name="empresa"
                 placeholder="Empresa"
               />
             </div>
             <div class="flex items-center justify-between">
-              <button
+              <input
                 class="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
+                value="Enviar"
               >
-                Enviar
-              </button>
             </div>
           </form>
         </div>
@@ -641,7 +650,7 @@
         class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
       >
       <a href="index.html" class="flex items-center">
-        <img src="/assets/Logo Blanco.png" class="h-8 mx-2" alt="" />
+        <img src="../public/assets/Logo Blanco.png" class="h-8 mx-2" alt="" />
       </a>
         <p
           class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
