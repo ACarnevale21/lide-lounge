@@ -38,7 +38,7 @@ router.post("/enviar-consulta", async (req, res) => {
     },
   });
   const info = await transporter.sendMail({
-    from: "canrevaleagustinj@gmail.com",
+    from: emailUser,
     to: "agustincarnevale1@gmail.com",
     subject: "Nueva consulta | Lide Lounge",
     html: htmlContent,
