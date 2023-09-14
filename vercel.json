@@ -12,9 +12,7 @@
       "dest": "/index.js",
       "methods": ["POST", "PUT"],
       "headers": {
-        "Content-Length": {
-          "max": "50mb"
-        }
+        "Content-Length": "50mb"
       }
     }
   ]
