@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 // Configure middleware to process form data
 app.use(express.urlencoded({ extended: false }));
-
+app.use("/public", express.static("public"));
 app.use(require("./routes/index"));
 
 // Configure middleware to process form data
