@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lide Lounge</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/lideloungeLOGO1.png"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="m-0 p-0">
+    <nav
+      class="bg-gray-900 dark:bg-gray-900 fixed w-full z-50 top-0 left-0 border-b border-gray-200 pt-2 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="index.html" class="flex items-center">
+          
+          <img src="assets/lideloungeLOGOblanco.png" class="h-8" alt="" />
+        </a>
+        <a href="#contacto">
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Contacto
+          </button>
+        </a>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://lideargentina.com/"
+                class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Lide Argentina</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              >
+                Lide News
+                <svg
+                  class="w-2.5 h-2.5 ml-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-md text-gray-500 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="https://lideargentina.com/lide-news/actualidad"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >ACTUALIDAD</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://lideargentina.com/lide-news/prensa"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >PRENSA</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="https://lideargentina.com/lide-tv/"
+                class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Lide TV</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="controls-carousel" class="relative" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div
+        class="relative h-96 overflow-hidden rounded-lg md:h-[630px] lg:h-[720px]"
+      >
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="assets/a746248.jpg"
+            class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 2 -->
+        <div
+          class="hidden duration-700 ease-in-out"
+          data-carousel-item="active"
+        >
+          <img
+            src="assets/a746219.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="assets/a746230.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!-- Slider controls -->
+      
+    </div>
+
+    <div
+      class="casa-lide_intro flex flex-col items-center justify-center h-28 mx-auto lg:w-[1200px] lg:mt-6 md:flex-row md:justify-center md:items-center sm:h-36"
+    >
+      <div
+        class="casa-lide_intro_heading text-4xl font-bold text-center md:text-7xl lg:mr-12"
+      >
+        <h1>LIDE LOUNGE</h1>
+      </div>
+      <div class="casa-lide__intro_text flex flex-col justify-center text-center object-center m-4">
+        <p>El centro de <b>negocios</b> más moderno de Buenos Aires.</p>
+        <a href="#contacto" class="w-full">
+            <button
+              type="button"
+              class="text-white w-full bg-gray-800 hover:bg-gray-900 font-medium text-sm px-5 my-2 py-2.5 md:mr-2 mb-2"
+            >
+              Mas Informacion
+            </button>
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="flex justify-center items-center w-full bg-[#DCDCDC] mt-12 mb-8 p-4"
+    >
+      <div
+        class="casa-lide_servicios grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-8 lg:w-[1200px] mx-auto lg:h-64"
+      >
+        <div
+          class="casa-lide_servicios_localizacion flex flex-col md:flex-row items-center justify-center"
+        >
+            <div class="box-border p-0 m-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-map-2"
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" />
+                <path d="M9 4v13" />
+                <path d="M15 7v5.5" />
+                <path
+                  d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z"
+                />
+                <path d="M19 18v.01" />
+              </svg>
+          </div>
+          <div class="text-center text-gray-800">
+            <h4 class="font-bold text-lg">Localizacion</h4>
+            <p class="text-sm">Lola Mora 421 3ro Of. 304 (1107) CABA</p>
+          </div>
+        </div>
+        <div
+          class="casa-lide_servicios_negocios flex flex-col md:flex-row items-center justify-center"
+        >
+            <div class="box-border p-0 m-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-users-group"
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+              </svg>
+              </div>
+            <div class="text-center text-gray-800">
+                <h4 class="font-bold text-lg">Negocios</h4>
+                <p class="text-sm">Para miembros y personas no afiliadas a LIDE - Grupo de Líderes Empresariales</p>
+              </div>
+        </div>
+        <div
+          class="casa-lide_servicios_audiovisual flex flex-col md:flex-row items-center justify-center"
+        >
+            <div class="box-border p-0 m-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-video-plus"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#2c3e50"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z"
+                    />
+                    <path
+                      d="M3 6m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z"
+                    />
+                    <path d="M7 12l4 0" />
+                    <path d="M9 10l0 4" />
+                  </svg>
+             </div>
+              <div class="text-center text-gray-800">
+                <h4 class="font-bold text-lg">Audiovisual</h4>
+                <p class="text-sm">Completa infraestructura de audio y video</p>
+              </div>
+        </div>
+        <div
+          class="casa-lide_servicios_catering flex flex-col md:flex-row items-center justify-center"
+        >
+            <div class="box-border p-0 m-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-coffee"
+            width="60"
+            height="60"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+            />
+            <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+            <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+            <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+            <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+          </svg>
+          </div>
+          <div class="text-center text-gray-800">
+            <h4 class="font-bold text-lg">Catering</h4>
+            <p class="text-sm">Servicio de catering especializado</p>
+          </div>
+        </div>
+        <div
+          class="casa-lide_servicios_24hs flex flex-col md:flex-row items-center justify-center"
+        >
+            <div class="box-border p-0 m-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-clock-check"
+            width="60"
+            height="60"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M20.942 13.021a9 9 0 1 0 -9.407 7.967" />
+            <path d="M12 7v5l3 3" />
+            <path d="M15 19l2 2l4 -4" />
+          </svg>
+          </div>
+          <div class="text-center text-gray-800">
+            <h4 class="font-bold text-lg">24hs por 7</h4>
+            <p class="text-sm">Nuestra operación se lleva a cabo todos los días a cualquier hora.</p>
+          </div>
+        </div>
+        <div
+          class="casa-lide_servicios_reserva-agil flex flex-col md:flex-row items-center justify-center"
+        >
+            <div class="box-border p-0 m-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-bookmark-plus"
+            width="60"
+            height="60"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12.357 17.214l-.357 -.214l-5 3v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v6.5"
+            />
+            <path d="M16 19h6" />
+            <path d="M19 16v6" />
+          </svg>
+          </div>
+          <div class="text-center text-gray-800">
+            <h4 class="font-bold text-lg">Reserva Ágil</h4>
+            <p class="text-sm">Contratación fácil y rápida: conozca nuestros planes.</p>
+          </div>
+        </div>
+        <div
+          class="casa-lide_servicios_customizado flex flex-col md:flex-row items-center justify-center"
+        >
+            <div class="box-border p-0 m-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-bulb"
+            width="60"
+            height="60"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+            <path
+              d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"
+            />
+            <path d="M9.7 17l4.6 0" />
+          </svg>
+          </div>
+          <div class="text-center text-gray-800">
+            <h4 class="font-bold text-lg">Customizado</h4>
+            <p class="text-sm">Soluciones personalizadas y de acuerdo a sus necesidades.</p>
+          </div>
+        </div>
+        <div
+          class="casa-lide_servicios_productividad flex flex-col md:flex-row items-center justify-center"
+        >
+            <div class="box-border p-0 m-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-chart-bar"
+            width="60"
+            height="60"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M3 12m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+            />
+            <path
+              d="M9 8m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+            />
+            <path
+              d="M15 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+            />
+            <path d="M4 20l14 0" />
+          </svg>
+          </div>
+          <div class="text-center text-gray-800">
+            <h4 class="font-bold text-lg">Productividad</h4>
+            <p class="text-sm">Un entorno moderno que estimula la eficiencia de su equipo: ideal para los negocios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="casa-lide_ambientes">
+      <div class="font-medium text-3xl ml-4 mb-12 md:ml-64">
+        <b>Conozca</b> nuestros ambientes
+      </div>
+      <div class="grid grid-cols-1 gap-2 lg:w-[1200px] mx-auto">
+        <div class="relative">
+          <img
+            class="h-auto max-w-full rounded-lg object-cover"
+            src="assets/a746234.jpg"
+            alt=""
+          />
+          <div
+            class="mx-auto w-[350px] my-6 md:absolute md:bottom-0 md:right-0 lg:-right-16 md:bg-gray-50 md:h-36 md:w-[350px] md:p-2 md:m-0 md:py-2"
+          >
+            <div class="text-center text-xl md:text-2xl">
+              Espacio <b>profesional</b> con tecnología de punta para eventos empresariales y conferencias inspiradoras.
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            class="h-auto max-w-full rounded-lg object-cover"
+            src="assets/a746242.jpg"
+            alt=""
+          />
+          <div
+            class="mx-auto w-[350px] my-6 md:absolute md:bottom-0 md:left-0 lg:-left-16 md:bg-white md:h-36 md:w-[350px] md:p-2 md:m-0 md:py-2"
+          >
+            <div class="text-center text-xl md:text-2xl">
+              Ámbito <b>ejecutivo</b> con capacidad para conferencias y reuniones estratégicas con líderes empresariales.
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto my-6">
+          <a href="#contacto">
+          <button
+            class="bg-black text-white p-4 text-center text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            Realice su reserva
+          </button>
+        </a>
+        </div>
+        <div class="relative">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="assets/a746209.jpg"
+            alt=""
+          />
+          <div
+            class="mx-auto w-[350px] my-6 md:absolute md:bottom-0 md:left-0 lg:-left-16 md:bg-white md:h-36  md:p-4 md:m-0 md:py-2"
+          >
+            <div class="text-center text-xl md:text-2xl">
+              Ambiente <b>moderno y versátil</b> para encuentros de negocios y presentaciones multimedia.
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="assets/a746232.jpg"
+            alt=""
+          />
+          <div
+            class="mx-auto w-[350px] my-6 md:absolute md:bottom-0 md:right-0 lg:-right-16 md:bg-white md:h-36 md:p-4 md:m-0"
+          >
+            <div class="text-center text-xl md:text-2xl">
+              Salón de <b>reuniones</b> de alto nivel con equipamiento audiovisual de última generación.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contacto" class="casa-lide_contacto mt-12">
+      <div class="font-medium text-3xl ml-4 mb-12 md:ml-64">
+        <b>Reservas</b> e Informacion
+      </div>
+      <div
+        class="casa-lide_contacto_data lg:grid lg:grid-cols-2 lg:p-6 lg:w-[1200px] lg:mx-auto"
+      >
+        <div class="casa-lide_contacto_avatar">
+          <div
+            class="casa-lide_contacto_foto_avatar mx-auto flex items-center justify-center mb-2"
+          >
+            <img
+              class="rounded-full w-36 h-36"
+              src="assets/avatar.jpeg"
+              alt="Extra large avatar"
+            />
+          </div>
+          <div class="casa-lide_contacto_informacion_avatar">
+            <h1 class="text-2xl font-semibold text-gray-800 text-center">
+              Mariela Castaño
+            </h1>
+            <h3 class="text-lg font-semibold text-gray-800 text-center">
+              Directora Lide Lounge
+            </h3>
+            <p class="text-md text-blue-700 text-center font-medium">
+              +54 9 (11) 5736-0558
+            </p>
+            <p class="text-md text-blue-700 text-center font-medium">
+              <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="375b5e53525b5842595052775b5e53525645505259435e59561954585a195645">[email&#160;protected]</a>
+            </p>
+          </div>
+        </div>
+        <div class="casa-lide_contacto_formulario">
+          <form
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+            action="enviar_consulta.php"
+            method="POST"
+          >
+            <div class="mb-4">
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="nombre"
+                type="text"
+                name="nombre"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="mb-4 flex flex-row gap-2">
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="telefono"
+                type="tel"
+                name="telefono"
+                placeholder="Teléfono"
+                required
+              />
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="cantpersonas"
+                type="number"
+                name="cantpersonas"
+                placeholder="Cantidad de Personas"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="empresa"
+                type="text"
+                name="empresa"
+                placeholder="Empresa"
+                required
+              />
+            </div>
+            <div class="flex items-center justify-between">
+              <input
+                class="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+                value="Enviar"
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="text-gray-600 body-font">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+      <a href="index.html" class="flex items-center">
+        <img src="assets/logonegro.png" class="h-8 mx-2" alt="" />
+      </a>
+        <p
+          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2023 Lide Lounge
+        
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+    
+    <div class="fixed bottom-4 right-1 animate-bounce">
+        <a href="https://wa.me/+5491157360558?text=Hola,%20quisiera%20hacer%20una%20reserva" target="_blank" >
+         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256" style="fill:#40C057;">
+            <g transform="translate(71.68,71.68) scale(0.44,0.44)"><g fill="#46c258" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M128,341.33333c-117.82075,0 -213.33333,-95.51259 -213.33333,-213.33333v0c0,-117.82075 95.51259,-213.33333 213.33333,-213.33333h0c117.82075,0 213.33333,95.51259 213.33333,213.33333v0c0,117.82075 -95.51259,213.33333 -213.33333,213.33333z" id="shape"></path></g><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path transform="translate(5.12038,0) scale(5.12,5.12)" d="M48,25c0,12.682 -10.318,23 -23,23c-3.79,0 -7.537,-0.942 -10.864,-2.728l-10.896,2.699c-0.079,0.019 -0.16,0.029 -0.24,0.029c-0.267,0 -0.527,-0.107 -0.718,-0.304c-0.248,-0.255 -0.341,-0.623 -0.245,-0.966l2.926,-10.44c-1.94,-3.436 -2.963,-7.33 -2.963,-11.29c0,-12.682 10.318,-23 23,-23c12.682,0 23,10.318 23,23z" id="strokeMainSVG" fill="#ffffff" stroke="#ffffff" stroke-width="7" stroke-linejoin="round"></path><g transform="translate(5.12038,0) scale(5.12,5.12)" fill="#46c258" stroke="none" stroke-width="1" stroke-linejoin="miter"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"></path></g></g></g>
+        </svg>
+        </a>
+    </div>
+    
+    <!-- modal -->
+    
+            <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>El correo se ha enviado correctamente.</p>
+          </div>
+        </div>
+        
+        <!-- Estilos CSS para el modal -->
+        <style>
+          /* Estilos para el modal */
+          .modal {
+              display: none;
+              position: fixed;
+              z-index: 1;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgba(0, 0, 0, 0.7);
+          }
+        
+          .modal-content {
+              background-color: #fefefe;
+              margin: 15% auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 50%;
+              text-align: center;
+          }
+        
+          .close {
+              color: #aaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+              cursor: pointer;
+          }
+        </style>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+          // Función para mostrar el modal
+          function showModal() {
+              var modal = document.getElementById("myModal");
+              modal.style.display = "block";
+          }
+        
+          // Cierra el modal cuando se hace clic en la "x"
+          document.querySelector(".close").addEventListener("click", function () {
+              var modal = document.getElementById("myModal");
+              modal.style.display = "none";
+          });
+        </script>
+        <script>
+    // Agrega este código después de tu formulario
+    document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Evita la recarga de la página
+
+        // Realiza la solicitud AJAX para enviar el formulario
+        var formData = new FormData(this);
+        var xhr = new XMLHttpRequest();
+        console.log(formData);
+        xhr.open("POST", "enviar_consulta.php", true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+
+                if (response.success) {
+                    showModal(); // Muestra el modal de confirmación
+                    resetForm(); // Restablece el formulario
+                } else {
+                    alert("Error al enviar el formulario."); // Maneja errores aquí
+                }
+            }
+        };
+        xhr.send(formData);
+    });
+
+    // Función para restablecer el formulario
+    function resetForm() {
+        var form = document.querySelector("form");
+        form.reset();
+    }
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>
