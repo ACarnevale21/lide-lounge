@@ -15,10 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cantpersonas = $_POST["cantpersonas"];
     $empresa = $_POST["empresa"];
 
-    $para = "contacto@lide-lounge.com"; // Reemplaza con tu dirección de correo electrónico
+    $para = "contacto@lide-lounge.com"; 
     $asunto = "Nueva consulta Lide-Lounge";
 
-    // Construye el cuerpo del mensaje con etiquetas HTML para el tamaño de letra
     $mensaje_completo = "<h3>Nombre:</h3>" . $nombre . "\n";
     $mensaje_completo .= "<h3>Email:</h3>" . $email . "\n";
     $mensaje_completo .= "<h3>Telefono:</h3>" . $telefono . "\n";
@@ -28,12 +27,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configura PHPMailer
     $mail = new PHPMailer(true);
     $mail->isSMTP();
-    $mail->Host = 'c1522469.ferozo.com'; // Reemplaza con el servidor SMTP de Don Web
+    $mail->Host = getenv('DON_WEB_HOST');
     $mail->SMTPAuth = true;
-    $mail->Username = 'contacto@lide-lounge.com'; // Reemplaza con tu usuario SMTP
-    $mail->Password = 'hUmB@JD3tT'; // Reemplaza con tu contraseña SMTP
+    $mail->Username = getenv('LIDE_EMAIL'); // Reemplaza con tu usuario SMTP
+    $mail->Password = getenv('SMTP_PW');
     $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
+    $mail->Port = getenv('PORT');
 
     $mail->setFrom($email, $nombre);
     $mail->addAddress($para);
@@ -50,7 +49,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo json_encode(array("success" => false));
     }
 } else {
-    // Si se intenta acceder al archivo directamente, redirecciona a la página del formulario
     header("Location: index.html");
 }
-?>
